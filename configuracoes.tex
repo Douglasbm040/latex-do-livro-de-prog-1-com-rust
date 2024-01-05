@@ -1,0 +1,113 @@
+
+% Pacotes básicos 
+\usepackage{lmodern}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{indentfirst}
+\usepackage{microtype}
+
+\usepackage{color}
+\usepackage{graphicx}
+
+\usepackage{pdfpages}
+
+% Pacotes matemáticos 
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+% Pacotes de citações
+\usepackage[brazilian,hyperpageref]{backref}
+
+% ---------------------------------------------------------
+% Selecione um estilo de referência
+
+% Estilo de referência da ABNT
+\usepackage[alf]{abntex2cite}
+
+% Outros estilos de referências
+%\bibliographystyle{abbrv}
+% ---------------------------------------------------------
+
+% Cada elemento tem sua própria numeração
+%\newtheorem{teorema}{Teorema}[section]
+%\newtheorem{corolario}{Corolário}[section]
+%\newtheorem{definicao}{Definição}[section]
+%\newtheorem{exemplo}{Exemplo}[section]
+
+% Os elementos compartilham a mesma numeração
+
+
+% CONFIGURAÇÕES DE PACOTES
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		Nenhuma citação no texto.%
+	\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+	\fi}%
+
+% Informações do PDF
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico},
+		colorlinks=true,
+    	linkcolor=blue,
+    	citecolor=blue,
+    	filecolor=magenta,
+		urlcolor=blue,
+		bookmarksdepth=4
+}
+\makeatother
+\usepackage{xcolor}
+\usepackage{listings}
+
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+% Posiciona figuras e tabelas no topo da página quando adicionadas sozinhas em um página em branco
+\makeatletter
+\setlength{\@fptop}{5pt} 
+\makeatother
+
+% O tamanho do parágrafo é dado por
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro
+\setlength{\parskip}{0.2cm} 

@@ -1,0 +1,1 @@
+cargo new nome-do-projeto
