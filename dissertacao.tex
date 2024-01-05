@@ -221,10 +221,10 @@ Como ja dito a sintaxe do Rust é inspirada em outras linguagens de programaçã
 A seguir, estão alguns exemplos de como o Rust é sintaticamente:
 
 
-\lstinputlisting[language=rust, caption = Declaração de variáveis onde x é uma variável do tipo inteiro e y do tipo String]{codigos/captulo1/declararVariaveis.rs}
-\lstinputlisting[language=rust, caption = Declaração de estruturas de controler :]{codigos/captulo1/if-else.rs}
-\lstinputlisting[language=rust, caption = Declaração de estruturas de loop :]{codigos/captulo1/loop.rs}
-\lstinputlisting[language=rust, caption = Declaração de funcoes  no exemplo uma função que soma duas variavies do tipo inteiros de 32 bytes que retorna um inteiro também de 32 bytes :]{codigos/captulo1/funcoes.rs}
+%%\lstinputlisting[language=rust, caption = Declaração de variáveis onde x é uma variável do tipo inteiro e y do tipo String]{codigos/captulo1/exemplos/src/2_variavies/declararVariaveis.rs}
+%%\lstinputlisting[language=rust, caption = Declaração de estruturas de controler :]{codigos/captulo1/if-else.rs}
+%%\lstinputlisting[language=rust, caption = Declaração de estruturas de loop :]{codigos/captulo1/loop.rs}
+%%\lstinputlisting[language=rust, caption = Declaração de funcoes  no exemplo uma função que soma duas variavies do tipo inteiros de 32 bytes que retorna um inteiro também de 32 bytes :]{codigos/captulo1/funcoes.rs}
 
 Como pode ser visto, a sintaxe do Rust é clara e concisa, o que a torna fácil de ler e escrever. Além disso, o Rust tem uma grande variedade de recursos avançados como tipagem forte , estática e a imultabilidade de variáveis que veremos mais aprofunadmente mais a frente.
 
@@ -236,15 +236,15 @@ O processo de compilação em Rust é relativamente simples. Primeiramente, é p
 Uma vez que o rustc e o Cargo estão instalados, é possível compilar um programa Rust usando o seguinte processo:
 \begin{enumerate}
     \item Crie um novo projeto usando o comando :
-    \lstinputlisting[language=Bash, caption = Isso criará uma nova pasta com a estrutura de arquivos básica para um projeto Rust]{codigos/captulo1/criarprojeto.sh}
+    %\lstinputlisting[language=Bash, caption = Isso criará uma nova pasta com a estrutura de arquivos básica para um projeto Rust]{codigos/captulo1/exemplos/src/1_comandos/criarprojeto.sh}
     \item Abra o arquivo src/main.rs no seu editor de texto preferido. Esse arquivo é o ponto de entrada do programa, e é onde você escreverá o código principal.
     \item Escreva o código Rust no arquivo main.rs. Exemplo :
-    \lstinputlisting[language=rust, caption = Hello World em Rust]{codigos/captulo1/exemplo1.rs}
+    %\lstinputlisting[language=rust, caption = Hello World em Rust]{codigos/captulo1/exemplo1.rs}
     \item entre na pasta do projeto pelo terminal:
     \item execute o comando :
-        \lstinputlisting[language=Bash, caption =Isso cria um arquivo executável em target/debug/nome-do-projeto ]{codigos/captulo1/cargobuider.sh}
+        %\lstinputlisting[language=Bash, caption =Isso cria um arquivo executável em target/debug/nome-do-projeto ]{codigos/captulo1/exemplos/src/1_comandos/cargobuider.sh}
     \item Agora você pode executar com este comando:
-    \lstinputlisting[language=Bash, caption =Rode para executar o projeto Rust ]{codigos/captulo1/comnd.sh}
+    %\lstinputlisting[language=Bash, caption =Rode para executar o projeto Rust ]{codigos/captulo1/exemplos/src/1_comandos/comnd.sh}
     \item Você também pode usar o comando  cargo run para compilar um codigo rust.Teste executando o programa usando o comando cargo run.
 \end{enumerate}
 
@@ -258,12 +258,12 @@ Em programação, as variáveis são como recipientes que armazenam valores dura
 
 Para usar uma variável em Rust, é preciso declará-la primeiro, informando o tipo de dado que ela armazenará. Por exemplo:
 
-\lstinputlisting[language=rust, caption = exemplo de declaração de variável ]{codigos/captulo1/variavel.rs}
+%\lstinputlisting[language=rust, caption = exemplo de declaração de variável ]{codigos/captulo1/variavel.rs}
 
 Neste exemplo, a variável x é declarada como do tipo i32, o que significa que ela armazenará um número inteiro de 32 bits. O valor inicial da variável é definido como 5.
 
 
-\lstinputlisting[language=rust, caption = exemplo de manipulção de variavel ]{codigos/captulo1/soma.rs}
+%\lstinputlisting[language=rust, caption = exemplo de manipulção de variavel ]{codigos/captulo1/soma.rs}
 
 Em resumo, as variáveis são um elemento fundamental da programação, e são muito úteis para armazenar e manipular dados durante a execução de um programa. No Rust, é preciso declarar as variáveis explicitamente, informando o tipo de dado que elas armazenarão, o que permite que o compilador verifique a consistência e a segurança do código.
 
@@ -287,14 +287,14 @@ Além desses tipos básicos, o Rust também possui tipos compostos como arrays, 
 
 Agora que os tipos que foram apresentados, falta entender como definir uma variável. Em Rust 
 para definir uma variável, basta usar a palavra-chave \textbf{let} seguida pelo nome da variável , opcionalmente, pelo tipo de dado que ela armazenará. Por exemplo:
-\lstinputlisting[language=rust, caption = exemplo de manipulção de variavel ]{codigos/captulo1/var1.rs}
+%\lstinputlisting[language=rust, caption = exemplo de manipulção de variavel ]{codigos/captulo1/var1.rs}
 
 No primeiro exemplo, a variável x é declarada explicitamente como do tipo i32, o que significa que ela armazenará um número inteiro de 32 bits. O valor inicial da variável é definido como 5.
 
 No segundo exemplo, a variável y é declarada sem especificar o tipo, o que significa que o compilador Rust tentará inferir o tipo a partir do valor atribuído. No caso, o valor "Olá, mundo!" é uma string, então a variável y será do tipo str.
 
 Aqui estão alguns exemplos de definição de variáveis do mundo real em Rust:
-\lstinputlisting[language=rust, caption = exemplo de tipos de variavel ]{codigos/captulo1/var2.rs}
+%\lstinputlisting[language=rust, caption = exemplo de tipos de variavel ]{codigos/captulo1/var2.rs}
 
 
 Nesses exemplos, são definidas variáveis para armazenar o nome de uma pessoa, a idade, a altura, se assistiu a um filme e o filme favorito. Cada variável é declarada explicitamente com um tipo apropriado, de acordo com o tipo de dado que ela armazena.
@@ -321,7 +321,7 @@ Em Rust, operadores são símbolos que representam ações a serem realizadas em
 Algumas categorias de operadores em Rust incluem:
 
 \begin{enumerate}
-    \item Aritméticos: permitem realizar operações matemáticas, como soma (+), subtração (-), multiplicação (*), divisão (/) e resto da divisão (\%).
+    \item Aritméticos: permitem realizar operações matemáticas, como soma (+), subtração (-), multiplicação (*), divisão (/) e resto da divisão ().
 
 \item Atribuição: permitem atribuir um valor a uma variável, como o operador igual (\texttt{=}) ou operadores compostos, como (\texttt{+=}) que adiciona um valor a uma variável existente.
 
@@ -343,13 +343,13 @@ Além dos operadores básicos mencionados acima, Rust também oferece uma série
 Entrada e Saída Para um programa de computador é fundamental a interação com dispositivos de entrada e de saída, pois é por meio da entrada que os programas recebem os dados e por meio de saída que são disponibilizadas às informações aos usuários. Isso é um princípio básico da computação. Essa interação pode ocorrer com vários dispositivos, mas, neste livro, será utilizado o teclado como dispositivo de entrada e o monitor como dispositivo de saída. 
 
 
-\lstinputlisting[language=rust, caption = exemplo de como ler uma linha de texto do teclado em Rust ]{codigos/captulo1/input.rs}
+%\lstinputlisting[language=rust, caption = exemplo de como ler uma linha de texto do teclado em Rust ]{codigos/captulo1/input.rs}
 
 
 
 Para escrever dados no monitor, você pode usar a função println!(). Ela imprime uma string no monitor, seguida de um caractere de nova linha. Aqui está um exemplo de como imprimir uma string no monitor em Rust:
 
-\lstinputlisting[language=rust, caption = exemplo de imprimir caracter na tela ]{codigos/captulo1/print.rs}
+%\lstinputlisting[language=rust, caption = exemplo de imprimir caracter na tela ]{codigos/captulo1/print.rs}
 
 \subsection{Formatadores no rust} 
 A macro println!() em Rust permite especificar o formato de cada argumento a ser impressa usando formatadores de tipo. Os formatadores de tipo são símbolos especiais que indicam o tipo do argumento a ser impresso.
@@ -371,20 +371,20 @@ Operador       & Tipo                                                           
 \end{table}
 \vspace{8em}
 
-\lstinputlisting[language=rust, caption = exemplo de como ler uma linha de texto do teclado em Rust ]{codigos/captulo1/formatadores.rs}
+%\lstinputlisting[language=rust, caption = exemplo de como ler uma linha de texto do teclado em Rust ]{codigos/captulo1/formatadores.rs}
 
 \subsubsection{Operação de concatenação :}
 Em Rust, o operador de concatenação é o ".to\_owned() +". Ele é usado para concatenar duas strings e produzir uma nova string como resultado.
 
 Exemplo:
-\lstinputlisting[language=rust, caption = exemplo 1 de concatenar duas variavies string em Rust ]{codigos/captulo1/con.rs}
+%\lstinputlisting[language=rust, caption = exemplo 1 de concatenar duas variavies string em Rust ]{codigos/captulo1/con.rs}
 
 A saída para o código acima seria:
 Ola, mundo!\\
 
 Além do operador ".to\_owned() +", é possível concatenar strings usando o método ".to\_string()". Exemplo usando o método ".to\_string()":
 
-\lstinputlisting[language=rust, caption = exemplo 2 de concatenar duas variavies string em Rust ]{codigos/captulo1/con2.rs}
+%\lstinputlisting[language=rust, caption = exemplo 2 de concatenar duas variavies string em Rust ]{codigos/captulo1/con2.rs}
 
 
 \section{Imutabilidade no rust :}
@@ -435,7 +435,7 @@ Já os memory leaks ocorrem quando um programa alocou memória dinamicamente, ma
 
 
 Por exemplo, suponha que temos uma função que precisa modificar uma variável que foi declarada em outro lugar:
-\lstinputlisting[language=rust, caption = exemplo empréstimo de variável  ]{codigos/captulo1/imut.rs}
+%\lstinputlisting[language=rust, caption = exemplo empréstimo de variável  ]{codigos/captulo1/imut.rs}
 
 Nesse exemplo, a função modify recebe um empréstimo mutável da variável my\_var por meio do parâmetro x. A função incrementa o valor de x em 1. Na função main, a variável my\_var é declarada e inicializada com o valor 42. A seguir, a função modify é chamada com um empréstimo mutável de my\_var usando \&mut my\_var. Finalmente, o valor de my\_var é impresso na tela.
 
@@ -2155,7 +2155,7 @@ As estruturas de controle de fluxo são elementos fundamentais em qualquer lingu
 \subsection{Estrutura de Decisão if-else}
 
 A estrutura de decisão "if-else" é usada em Rust para executar código condicionalmente com base em uma condição booleana. A sintaxe básica para o uso do "if-else" em Rust é a seguinte:
-\lstinputlisting[language=rust, caption = exemplo de if -else   ]{codigos/captulo2/if.rs}
+%\lstinputlisting[language=rust, caption = exemplo de if -else   ]{codigos/captulo2/if.rs}
 
 
 Neste exemplo, a condição numero == a 0 é verificada usando o comando if. Se for verdadeira, será impressa a mensagem "O numero nao eh igual a 0", caso contrário, será testa a condição de numero == se for verdadeira executa "O numero nao eh igual a 1", caso for falsa irá escrever na tela texto "valor nao eh 0 ou 1".
@@ -2170,7 +2170,7 @@ A condição pode ser uma expressão booleana simples, como uma comparação ent
 
 A estrutura de decisão "match" em Rust é usada para fazer correspondências entre diferentes valores e executar ações diferentes com base no valor correspondido. A sintaxe básica para o uso do "match" em Rust é a seguinte:
 Aqui está um exemplo de código em Rust usando o comando match:
-\lstinputlisting[language=rust, caption = Exemplo decisão match   ]{codigos/captulo2/match.rs}
+%\lstinputlisting[language=rust, caption = Exemplo decisão match   ]{codigos/captulo2/match.rs}
 
 
 Neste exemplo, o valor da variável numero é comparado com diferentes padrões usando o comando match. Se o valor for igual a 1, será impressa a mensagem "O numero eh 1", se for igual a 2, será impressa a mensagem "O numero eh 2", e assim por diante. O \_ é um padrão curinga que corresponde a qualquer valor e é usado como ação padrão para outros valores que não correspondem aos padrões anteriores.
@@ -2197,7 +2197,7 @@ Em Rust, os operadores relacionais são utilizados para comparar dois valores e 
 
 Aqui está um exemplo de como esses operadores podem ser usados em Rust:
 
-\lstinputlisting[language=rust, caption = exemplo de operadores binários]{codigos/captulo2/operadores.rs}
+%\lstinputlisting[language=rust, caption = exemplo de operadores binários]{codigos/captulo2/operadores.rs}
 
 
 \subsection{Pattern Matching em Rust}
@@ -2213,7 +2213,7 @@ Nesse exemplo, \texttt{valor} é o valor que está sendo verificado, \texttt{pad
 
 O pattern matching em Rust oferece uma maneira concisa e legível de lidar com diferentes cenários com base em padrões de dados. Ele ajuda a evitar a necessidade de múltiplos blocos \texttt{if} encadeados e simplifica o código, tornando-o mais expressivo e robusto.
 
-\lstinputlisting[language=rust, caption = exemplo de operadores binários]{codigos/captulo2/patternmatch.rs}
+%\lstinputlisting[language=rust, caption = exemplo de operadores binários]{codigos/captulo2/patternmatch.rs}
 
 
 Neste exemplo, o valor da variável \texttt{valor} é comparado com diferentes padrões usando a expressão \texttt{match}. Dependendo do valor, uma ação específica é executada.
