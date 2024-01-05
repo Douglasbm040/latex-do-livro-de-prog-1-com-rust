@@ -11,6 +11,27 @@ Antes de executar os exemplos de código e visualizar o conteúdo deste livro, c
 2. **Extensão LaTeX Workshop:** Instale a extensão LaTeX Workshop no Visual Studio Code para compilar e visualizar documentos LaTeX. Você pode encontrar a extensão em [https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop).
 
 3. **MiKTeX:** O MiKTeX é um sistema de distribuição TeX/LaTeX para Windows. Baixe e instale o MiKTeX a partir do site oficial em [https://miktex.org/download](https://miktex.org/download).
+4. **Perl:**
+   - **Windows:**
+     - Strawberry Perl: Baixe o instalador no [site oficial](http://strawberryperl.com/) e siga as instruções na tela.
+     - ActivePerl: Baixe o instalador no [site oficial](https://www.activestate.com/products/perl/downloads/) e siga as instruções na tela.
+   - **macOS:**
+     - Homebrew: Abra o Terminal e execute:
+       ```bash
+       /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+       brew install perl
+       ```
+     - MacPorts: Abra o Terminal e execute:
+       ```bash
+       sudo port install perl5
+       ```
+   - **Linux (Ubuntu/Debian):**
+     ```bash
+     sudo apt-get update
+     sudo apt-get install perl
+     ```
+   - **Outras Distribuições Linux:**
+     Utilize o gerenciador de pacotes específico da sua distribuição para instalar o Perl.
 
 ## Executando o Projeto
 
@@ -48,3 +69,5 @@ O projeto está estruturado em :
 Se desejar contribuir para o desenvolvimento deste livro, sinta-se à vontade para abrir issues, enviar pull requests ou entrar em contato com a equipe de desenvolvimento.
 
 Esperamos que este livro seja uma ferramenta valiosa para o aprendizado de Rust na disciplina de Programação 1 na UFES. Boa leitura e bons estudos!
+
+
