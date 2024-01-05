@@ -9,7 +9,7 @@
 \usepackage[utf8x]{inputenc}
 \usepackage{pict2e}
 \usepackage{wasysym}
-\usepackage[english]{babel}
+%\usepackage[english]{babel}
 \usepackage{tikz}
 \pagestyle{empty}
 

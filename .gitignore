@@ -15,3 +15,14 @@
 *.aliases
 *.lvlps
 .cache/
+*.aux
+*.bbl
+*.brf
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.synctex.gz
+*.toc
+*.pdf
+*.log
